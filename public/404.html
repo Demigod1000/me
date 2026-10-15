@@ -6,8 +6,8 @@
     <script>
       // GitHub Pages SPA redirect: rewrites the path into a query parameter
       // so index.html can pick it up and restore the correct client-side route.
-      var segment = 0; // number of path segments to keep (0 for username.github.io root)
       var loc = window.location;
+      var segment = loc.pathname.startsWith("/me") ? 1 : 0;
       loc.replace(
         loc.protocol +
           "//" +

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, Outlet, useLocation } from "@tanstack/react-router";
 import { ArrowUpRight, Github, Menu, X, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import navbarBadge from "@/assets/navbar-kitten.png.asset.json";
+import navbarBadge from "@/assets/navbar-kitten.png";
 import { GITHUB_URL } from "@/lib/github";
 
 const nav = [
@@ -26,7 +26,7 @@ export function SiteLayout() {
             aria-label="Sachidanand home"
           >
             <img
-              src={navbarBadge.url}
+              src={navbarBadge}
               alt="Sachidanand's pixel kitten avatar"
               width={56}
               height={56}

@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { ArrowRight, ArrowUpRight, Code2, Github, MapPin, Sparkles } from "lucide-react";
-import world from "@/assets/hero-island.gif.asset.json";
+import world from "@/assets/hero-island.gif";
 import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/components/ProjectCard";
 import { GITHUB_LOGIN, formatSnapshotDate, githubSnapshotOptions } from "@/lib/github";
@@ -26,7 +26,7 @@ function Index() {
     <>
       <section className="world-hero">
         <img
-          src={world.url}
+          src={world}
           alt="Animated pixel-art coding island with a computer, trees and a little orange cat, floating in the sky"
           width={800}
           height={450}

@@ -15,7 +15,6 @@ export default defineConfig({
     tailwindcss(),
     tsconfigPaths(),
   ],
-  // For GitHub Pages: set to '/' for a custom domain, or '/<repo-name>/' for
-  // project pages. Adjust as needed when you deploy.
-  base: "/",
+  // For GitHub Pages (https://demigod1000.github.io/me/):
+  base: process.env.BASE_URL ?? "/me/",
 });
