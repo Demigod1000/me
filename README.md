@@ -151,6 +151,7 @@ Choose your prompt below:
 <summary>🔹 <b>"How do I start a new adventure / collaborate?"</b></summary>
 <blockquote>
 <i>"An interesting project, a question about code, or just a friendly hello — feel free to drop into my GitHub discussions or check out my repositories!"</i><br/><br/>
+👉 <b>Email: <a href="mailto:sachi.s34@gmail.com">sachi.s34@gmail.com</a></b><br/>
 👉 <b><a href="https://github.com/Demigod1000">GitHub Profile: @Demigod1000</a></b><br/>
 👉 <b><a href="https://demigod1000.github.io/me/contact">Contact Page on Portfolio</a></b>
 </blockquote>

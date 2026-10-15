@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useSuspenseQuery } from "@tanstack/react-query";
-import { ArrowUpRight, Github, MapPin, MessageSquare } from "lucide-react";
+import { ArrowUpRight, Github, Mail, MapPin, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { githubSnapshotOptions } from "@/lib/github";
 export const Route = createFileRoute("/contact")({
@@ -22,21 +22,44 @@ function ContactPage() {
         you.
       </p>
       <div className="mt-12 border-y-2 py-9 grid md:grid-cols-2 gap-10">
-        <div>
-          <div className="pixel-icon bg-primary inline-flex">
-            <MessageSquare size={28} />
+        <div className="flex flex-col gap-8">
+          <div>
+            <div className="pixel-icon bg-primary inline-flex">
+              <Mail size={28} />
+            </div>
+            <h2 className="font-display text-sm mt-5">Direct Email</h2>
+            <p className="text-muted-foreground my-3 leading-7">
+              Send me an email directly for collaborations, contracts, or just a friendly chat.
+            </p>
+            <Button asChild className="pixel-button">
+              <a href="mailto:sachi.s34@gmail.com">
+                <Mail size={16} /> sachi.s34@gmail.com <ArrowUpRight size={16} />
+              </a>
+            </Button>
           </div>
-          <h2 className="font-display text-sm mt-6">Find me on GitHub</h2>
-          <p className="text-muted-foreground my-5 leading-7">
-            Explore my work or join a conversation on one of my public projects.
-          </p>
-          <Button asChild className="pixel-button">
-            <a href={github.profile.html_url} target="_blank" rel="noreferrer">
-              <Github /> @Demigod1000 <ArrowUpRight />
-            </a>
-          </Button>
+
+          <div className="border-t-2 pt-6">
+            <h3 className="font-display text-xs mb-3 flex items-center gap-2">
+              <MessageSquare size={16} /> Find me on GitHub
+            </h3>
+            <p className="text-muted-foreground mb-4 text-sm leading-6">
+              Explore my open-source work or start a discussion on one of my public projects.
+            </p>
+            <Button asChild variant="outline" className="pixel-button bg-card">
+              <a href={github.profile.html_url} target="_blank" rel="noreferrer">
+                <Github size={16} /> @Demigod1000 <ArrowUpRight size={16} />
+              </a>
+            </Button>
+          </div>
         </div>
-        <div className="md:border-l-2 md:pl-10 flex flex-col justify-center gap-5">
+
+        <div className="md:border-l-2 md:pl-10 flex flex-col justify-center gap-6">
+          <div className="flex items-center gap-3 font-mono text-sm">
+            <Mail size={19} className="text-primary shrink-0" />
+            <a href="mailto:sachi.s34@gmail.com" className="hover:underline">
+              sachi.s34@gmail.com
+            </a>
+          </div>
           <div className="flex items-center gap-3">
             <MapPin size={19} />
             <span>Based in {github.profile.location || "India"}</span>
