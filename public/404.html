@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <script>
+      // GitHub Pages SPA redirect: rewrites the path into a query parameter
+      // so index.html can pick it up and restore the correct client-side route.
+      var segment = 0; // number of path segments to keep (0 for username.github.io root)
+      var loc = window.location;
+      loc.replace(
+        loc.protocol +
+          "//" +
+          loc.hostname +
+          (loc.port ? ":" + loc.port : "") +
+          loc.pathname
+            .split("/")
+            .slice(0, 1 + segment)
+            .join("/") +
+          "/?/" +
+          loc.pathname.slice(1).split("/").slice(segment).join("/").replace(/&/g, "~and~") +
+          (loc.search ? "&" + loc.search.slice(1).replace(/&/g, "~and~") : "") +
+          loc.hash,
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

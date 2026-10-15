@@ -1,0 +1,63 @@
+{
+  "profile": {
+    "login": "Demigod1000",
+    "name": "Sachidanand",
+    "html_url": "https://github.com/Demigod1000",
+    "location": "India",
+    "public_repos": 6,
+    "followers": 1,
+    "following": 3,
+    "created_at": "2014-06-27T15:19:41Z"
+  },
+  "fetchedAt": "2026-10-15",
+  "projects": [
+    {
+      "name": "socialFeed",
+      "description": "A twitter like system created when I was bored. TLDR I used AI to write the code after planning the architecture",
+      "html_url": "https://github.com/Demigod1000/socialFeed",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "updated_at": "2026-10-15T13:21:51Z"
+    },
+    {
+      "name": "Vyne",
+      "description": "Vyne - Modern Retail Management System",
+      "html_url": "https://github.com/Demigod1000/Vyne",
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "updated_at": "2026-03-02T17:08:35Z"
+    },
+    {
+      "name": "vision",
+      "description": "A simple targeting system based on latest yolo",
+      "html_url": "https://github.com/Demigod1000/vision",
+      "language": "Python",
+      "stargazers_count": 0,
+      "updated_at": "2026-03-01T06:56:51Z"
+    },
+    {
+      "name": "macHinger",
+      "description": "A fun project to make your macbook pro play music notes using the hinge",
+      "html_url": "https://github.com/Demigod1000/macHinger",
+      "language": "Python",
+      "stargazers_count": 0,
+      "updated_at": "2025-10-31T06:44:27Z"
+    },
+    {
+      "name": "react-expense-manger",
+      "description": null,
+      "html_url": "https://github.com/Demigod1000/react-expense-manger",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "updated_at": "2022-01-17T04:22:43Z"
+    },
+    {
+      "name": "celium",
+      "description": "A fun wordpress project",
+      "html_url": "https://github.com/Demigod1000/celium",
+      "language": null,
+      "stargazers_count": 0,
+      "updated_at": "2020-10-12T13:24:09Z"
+    }
+  ]
+}
